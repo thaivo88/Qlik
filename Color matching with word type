@@ -1,0 +1,7 @@
+//any words or part of a word having any hewl will be orange
+//any words or part of a word with faceb will be purple
+
+
+=IF(WildMatch(CustomerName,'Hewl*'),$(HPEORANGE)
+	,IF(WildMatch(CustomerName,'Faceb*'),$(HPEPURPLE)
+    		,Null)) 
